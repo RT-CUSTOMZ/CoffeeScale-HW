@@ -1,0 +1,48 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Barrel_Jack_Switch
+D DC Barrel Jack with an internal switch
+K DC power barrel jack connector
+F ~
+$ENDCMP
+#
+$CMP Fuse
+D Fuse, generic
+K Fuse
+F ~
+$ENDCMP
+#
+$CMP HX711
+D ESP8266-07
+K esp esp8266 wifi
+$ENDCMP
+#
+$CMP IRF7410PbF
+D IRF7410PbF
+K P-Channel MOSFET
+F https://www.infineon.com/dgdl/irf7410pbf.pdf?fileId=5546d462533600a4015355fa75d71bb0
+$ENDCMP
+#
+$CMP Jumper_3_2_Bridged
+D Jumper, 3  2-pole, closed/bridged
+K Jumper SPST
+F ~
+$ENDCMP
+#
+$CMP LPKF_Passermarke
+D Mounting Hole without connection
+K mounting hole
+F ~
+$ENDCMP
+#
+$CMP SW_Push_JTP-1130
+D Push button switch, generic, two pins
+K switch normally-open pushbutton push-button
+$ENDCMP
+#
+$CMP esp8266-07
+D ESP8266-07
+K esp esp8266 wifi
+$ENDCMP
+#
+#End Doc Library
