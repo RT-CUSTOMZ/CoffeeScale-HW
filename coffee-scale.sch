@@ -252,7 +252,7 @@ Text GLabel 10400 3550 2    50   Input ~ 0
 ESP_ENABLE
 Text GLabel 10400 3650 2    50   Input ~ 0
 RXD0
-Text GLabel 10400 3750 2    50   Input ~ 0
+Text GLabel 10400 3750 2    50   Output ~ 0
 TXD0
 $Comp
 L power:GND #PWR0125
@@ -277,7 +277,7 @@ Wire Wire Line
 	10400 3850 10400 3950
 Text GLabel 10350 2100 2    50   Input ~ 0
 ~Bootloader
-Text GLabel 7200 1900 0    50   Input ~ 0
+Text GLabel 7200 1900 0    50   Output ~ 0
 ESP_ENABLE
 Text GLabel 9650 1700 2    50   Input ~ 0
 TXD0
@@ -681,7 +681,7 @@ L Device:C C10
 U 1 1 5C2D5359
 P 3350 1650
 F 0 "C10" H 3465 1696 50  0000 L CNN
-F 1 "10u" H 3465 1605 50  0000 L CNN
+F 1 "1u" H 3465 1605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3388 1500 50  0001 C CNN
 F 3 "~" H 3350 1650 50  0001 C CNN
 	1    3350 1650
@@ -706,7 +706,7 @@ L Device:C C5
 U 1 1 5C2DD297
 P 1650 2000
 F 0 "C5" H 1765 2046 50  0000 L CNN
-F 1 "10u" H 1765 1955 50  0000 L CNN
+F 1 "1u" H 1765 1955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 1850 50  0001 C CNN
 F 3 "~" H 1650 2000 50  0001 C CNN
 	1    1650 2000
@@ -852,13 +852,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 5C37632A
-P 750 2650
-F 0 "J1" H 670 2967 50  0000 C CNN
-F 1 "Conn_01x04" H 670 2876 50  0000 C CNN
-F 2 "Connector_Wire:SolderWirePad_1x04_P3.175mm_Drill0.8mm" H 750 2650 50  0001 C CNN
-F 3 "~" H 750 2650 50  0001 C CNN
-	1    750  2650
-	-1   0    0    -1  
+P 750 2750
+F 0 "J1" H 670 3067 50  0000 C CNN
+F 1 "Conn_01x04" H 670 2976 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 750 2750 50  0001 C CNN
+F 3 "~" H 750 2750 50  0001 C CNN
+	1    750  2750
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1650 1800 1300 1800
@@ -1067,4 +1067,61 @@ Wire Wire Line
 Connection ~ 2300 5950
 Wire Wire Line
 	2300 5950 2550 5950
+Text Label 1300 1800 0    50   ~ 0
+E+
+Text Label 1450 2300 0    50   ~ 0
+E-
+$Comp
+L Device:R R10
+U 1 1 5C30450F
+P 8650 5600
+F 0 "R10" V 8443 5600 50  0000 C CNN
+F 1 "250" V 8534 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8580 5600 50  0001 C CNN
+F 3 "~" H 8650 5600 50  0001 C CNN
+	1    8650 5600
+	0    1    1    0   
+$EndComp
+Text Notes 8550 5950 0    50   ~ 0
+(3.3V - 2.8V) / 2mA = 250 Ohm
+$Comp
+L Library:LW_M673 D2
+U 1 1 5C314813
+P 8100 5600
+F 0 "D2" H 8091 5816 50  0000 C CNN
+F 1 "LW_M673" H 8091 5725 50  0000 C CNN
+F 2 "Library:LW_M673" H 8100 5350 50  0001 C CNN
+F 3 "~" H 8100 5700 50  0001 C CNN
+	1    8100 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 5600 0    50   Output ~ 0
+LED
+Wire Wire Line
+	7750 5600 7950 5600
+Wire Wire Line
+	8250 5600 8500 5600
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5C32CD9C
+P 8900 5500
+F 0 "#PWR0111" H 8900 5350 50  0001 C CNN
+F 1 "+3.3V" H 8915 5673 50  0000 C CNN
+F 2 "" H 8900 5500 50  0001 C CNN
+F 3 "" H 8900 5500 50  0001 C CNN
+	1    8900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5500 8900 5600
+Wire Wire Line
+	8900 5600 8800 5600
+Text GLabel 7500 2100 0    50   Input ~ 0
+LED
+Wire Wire Line
+	7700 2100 7500 2100
+Text Label 1800 3100 0    50   ~ 0
+A-
+Text Label 1800 3200 0    50   ~ 0
+A+
 $EndSCHEMATC

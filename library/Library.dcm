@@ -35,6 +35,12 @@ K mounting hole
 F ~
 $ENDCMP
 #
+$CMP LW_M673
+D Light emitting diode
+K LED diode
+F ~
+$ENDCMP
+#
 $CMP SW_Push_JTP-1130
 D Push button switch, generic, two pins
 K switch normally-open pushbutton push-button
