@@ -5,7 +5,7 @@
 
 ## Schematics
 
-[Link to Schematic pdf](./coffee_scale.pdf )
+[Link to Schematic pdf](./coffee-scale.pdf )
 
 ![Schematics](coffee-scale_schematics.png)
 
