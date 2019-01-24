@@ -9,3 +9,6 @@
 
 ![Schematics](coffee-scale_schematics.png)
 
+## Messbrücke
+
+![Wheatstone Brdge](wheatstoneBridge.png)
