@@ -2,3 +2,13 @@
 
 * RATE Pin connected to GND -> 10 Hz mode
 * X1 Pin connected to GND -> on-chip oscillator is activate
+
+## Schematics
+
+[Link to Schematic pdf](./coffee-scale.pdf )
+
+![Schematics](coffee-scale_schematics.png)
+
+## Messbrücke
+
+![Wheatstone Brdge](wheatstoneBridge.png)
